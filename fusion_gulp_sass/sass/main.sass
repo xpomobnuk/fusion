@@ -1,0 +1,60 @@
+@import bourbon
+@import vars.sass
+
+//Load Libs SASS
+@import "app/libs/font-awesome/css/font-awesome.sass"
+@import "app/libs/animate/animate.sass"
+
+*::-webkit-input-placeholder
+	color: #222
+	opacity: 1
+
+*:-moz-placeholder
+	color: #222
+	opacity: 1
+
+*::-moz-placeholder
+	color: #222
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #222
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #222
+body input:required:valid,
+body textarea:required:valid
+	color: #222
+
+
+.gray
+	background-color: #202020
+
+.top_section
+	text-align: center
+	hr
+		border: none
+		color: $main_color
+		background-color: $main_color
+		height: 124px
+		width: 1px
+		margin: 0 auto
+	p
+		color: $main_color
+		text-transform: uppercase
+		font-size: em(12px)
+		font-family: "OpenSans", sans-serif
+		font-weight: 600
+		margin: 0
+		margin-top: 24px
+	h1
+		color: #fff
+		font-family: "Merriweather", sans-serif
+		font-size: em(40px)
+
+
+
+//ALWAYS END
+@import media
