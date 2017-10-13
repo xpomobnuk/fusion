@@ -66,6 +66,7 @@ body textarea:required:valid
 			color: $main_color
 			font-size: 22px
 	h2
+		+mt(.5s)
 		color: #fff
 		font-family: "Merriweather", sans-serif
 		font-size: em(30px)
@@ -87,6 +88,16 @@ body textarea:required:valid
 		i
 			color: $main_color
 			margin-left: 8px
+
+.our_services_item
+	&:hover
+		h2
+			+mt(.5s)
+			color: $main_color
+		a
+			color: $main_color
+			text-decoration: none
+			+mt(.5s)
 
 //ALWAYS END
 @import media
