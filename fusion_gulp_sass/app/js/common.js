@@ -11,7 +11,17 @@ load();
 $(".top_text h1").animated("fadeInDown", "fadeOutUp");
 $(".top_text ul").animated("fadeInUp", "fadeOutDown");
 
-$(".our_services_item p").height('auto').equalHeights();
+
+
+function heightses() {
+		$(".our_services_item p").height('auto').equalHeights();
+	}
+
+heightses();
+
+	$(window).resize(function()	{
+		heightses();
+	});
 
 
 
