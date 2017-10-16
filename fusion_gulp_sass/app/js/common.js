@@ -25,6 +25,7 @@ heightses();
 
 $(".carousel-eq").owlCarousel({
 		loop:true,
+		center: true,
 		responsive:{
 			0:{
 				items:1,
@@ -33,16 +34,16 @@ $(".carousel-eq").owlCarousel({
 				items:1,
 			},
 			560:{
-				items:2,
+				items:1,
 			},
 			768:{
-				items:2,
+				items:1,
 			},
 			992:{
-				items:3,
+				items:1,
 			},
 			1200:{
-				items:4,
+				items:1,
 			}
 		}
 	});
