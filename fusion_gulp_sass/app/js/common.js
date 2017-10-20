@@ -112,7 +112,12 @@ $(".advice_wrap").owlCarousel({
 
 	});
 
+	$(".team_item_wrap").click(function() {
+		$(".team_item_wrap").removeClass("active");
+		$(this).addClass("active");
+	});
 
+	//$(".team_item_wrap .active p").delay(300).fadeIn(800);
 
 
 });

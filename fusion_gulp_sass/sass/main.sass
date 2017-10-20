@@ -208,12 +208,41 @@ body textarea:required:valid
 				float: none
 
 .team_item_wrap
+	position: relative
 	text-align: center
 	height: 320px
 	width: 290px
+	border-bottom: 1px solid red
+	border-right: 1px solid red
+	+mt(.5s)
 	img
+		+mt(.5s)
 		border-radius: 50%
 		max-width: 120px
+		margin-top: 48px
+	h4
+		margin-top: 28px
+	p
+		+mt(1.5s)
+		position: absolute
+		top: 0
+		padding: 0px 20px 0 40px
+		color: #bababa
+		font-size: em(13px)
+		line-height: 2em
+		padding: 0px 20px 0 75px
+	&.active
+		img
+			+mt(.5s)
+			transform: translate(-115px, -75px) scale(0.40)
+		h4
+			+mt(.5s)
+			transform: translate(-115px, -80px) rotate(90deg)
+		p
+			margin-top: 5px
+			text-align: left
+			+mt(1.5s)
+			display:block!important
 
 //ALWAYS END
 @import media
