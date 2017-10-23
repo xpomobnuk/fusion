@@ -8,8 +8,8 @@ function load()	{
 };
 load();
 
-$(".top_text h1").animated("fadeInDown", "fadeOutUp");
-$(".top_text ul").animated("fadeInUp", "fadeOutDown");
+$(".top_text h1").animated("fadeInDown");
+$(".top_text ul").animated("fadeInUp");
 
 
 
@@ -117,7 +117,7 @@ $(".advice_wrap").owlCarousel({
 		$(this).addClass("active");
 	});
 
-	//$(".team_item_wrap .active p").delay(300).fadeIn(800);
+	$(".team_item_wrap p").animated("fadeIn");
 
 
 });

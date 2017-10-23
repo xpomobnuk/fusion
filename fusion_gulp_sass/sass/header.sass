@@ -64,7 +64,7 @@ body
 
 .main_head
 	height: 100vh
-	background-color: #232323
+	//background-color: #232323
 
 section,
 .main_head
@@ -136,6 +136,13 @@ svg
 		+mt(.4s)
 		&:hover
 			color: $main_color
+		&:active
+			color: $main_color
+			text-decoration: none
+		&:visited
+			color: $main_color
+			text-decoration: none
+
 	ul
 		list-style-type: none
 		margin: 0
@@ -187,6 +194,15 @@ h4
 		text-decoration: none
 		&:hover
 			+mt(.5s)
+			color: $main_color
+			text-decoration: none
+		&:active
+			color: $main_color
+			text-decoration: none
+		&:visited
+			color: $main_color
+			text-decoration: none
+		&:focus
 			color: $main_color
 			text-decoration: none
 	i

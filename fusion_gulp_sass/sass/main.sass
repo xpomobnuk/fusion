@@ -38,6 +38,7 @@ body textarea:required:valid
 	background-color: #181818
 .top_section
 	text-align: center
+	margin-bottom: 110px
 	hr
 		border: none
 		color: $main_color
@@ -63,7 +64,6 @@ body textarea:required:valid
 
 .our_services_item
 	padding-left: 62px
-	margin-top: 115px
 	margin-bottom: 150px
 	.icon_wrap
 		i
@@ -149,7 +149,7 @@ body textarea:required:valid
 		margin-left: 0
 
 .company_logos
-	margin: 115px 0 90px
+	margin-bottom: 90px
 	text-align: center
 	img
 		max-width: 70%
@@ -207,23 +207,22 @@ body textarea:required:valid
 			.regular
 				float: none
 
+
 .team_item_wrap
+	margin: 0 auto
 	position: relative
 	text-align: center
 	height: 320px
 	width: 290px
-	border-bottom: 1px solid red
-	border-right: 1px solid red
-	+mt(.5s)
 	img
 		+mt(.5s)
 		border-radius: 50%
 		max-width: 120px
 		margin-top: 48px
 	h4
+		+mt(.5s)
 		margin-top: 28px
 	p
-		+mt(1.5s)
 		position: absolute
 		top: 0
 		padding: 0px 20px 0 40px
@@ -239,10 +238,37 @@ body textarea:required:valid
 			+mt(.5s)
 			transform: translate(-115px, -80px) rotate(90deg)
 		p
+			+animation-delay(.2s)
 			margin-top: 5px
 			text-align: left
-			+mt(1.5s)
 			display:block!important
+
+.contact-us
+	.form_wrap
+		max-width: 745px
+		margin: 0 auto
+		background-color: #181818
+		.contact-form
+			display: inline-block
+			padding: 50px 57px 55px
+			//text-align: center
+			label
+				display: block
+				float: left
+				min-height: 50px
+				margin: 0px 19px
+			input
+				background-color: transparent
+				border: none
+				border-bottom: 1px solid #414141
+				outline: none
+				&:focus
+					+mt(.5s)
+					border-bottom: 1px solid $main_color
+					outline: none
+
+
+
 
 //ALWAYS END
 @import media
