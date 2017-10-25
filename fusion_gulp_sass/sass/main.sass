@@ -244,8 +244,9 @@ body textarea:required:valid
 			display:block!important
 
 .contact-us
+	padding-bottom: 120px
 	.form_wrap
-		max-width: 745px
+		max-width: 750px
 		margin: 0 auto
 		background-color: #181818
 		.contact-form
@@ -283,7 +284,28 @@ body textarea:required:valid
 					width: 274px
 					padding-bottom: 12px
 					color: #fff
-					
+				&.your_message
+					margin-top: 60px
+					input
+						width: 586px
+
+.text-center
+	text-align: center
+.form_button
+	text-transform: uppercase	
+	font-family: "OpenSansSemiBold", sans-serif
+	font-size: em(17px)
+	border: none
+	padding: 20px 35px
+	background-color: $main_color
+	+mt(.5s)
+	margin-top: 40px
+	&:hover
+		+mt(.5s)
+		background-color: darken($main_color, 10%)
+
+.footer
+	text-align: center
 
 
 

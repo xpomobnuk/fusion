@@ -119,11 +119,14 @@ $(".advice_wrap").owlCarousel({
 
 	$(".team_item_wrap p").animated("fadeIn");
 
-	
+
+
 
 	$(".contact-form label").click(function() {
-		$(".contact-form label").removeClass("active").removeClass("active2");
-		$(this).addClass("active").addClass("active2");
+		$(".contact-form label").removeClass("active");
+		$(this).addClass("active");
+	
+			
 		
 		});
 
