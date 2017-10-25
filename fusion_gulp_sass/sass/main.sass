@@ -255,17 +255,35 @@ body textarea:required:valid
 			label
 				display: block
 				float: left
-				min-height: 50px
-				margin: 0px 19px
-			input
-				background-color: transparent
-				border: none
-				border-bottom: 1px solid #414141
-				outline: none
-				&:focus
+				margin: 0px 19px 15px
+				font-family: "OpenSansRegular", sans-serif
+				span
 					+mt(.5s)
-					border-bottom: 1px solid $main_color
+					display: block
+					height: 24px
+					padding-top: 10px
+					font-size: em(14px)
+					color: #fff
+					text-transform: uppercase
+				&.active
+					input
+						+mt(.5s)
+						border-bottom: 1px solid $main_color
+					span
+						+mt(.5s)
+						padding-top: 0
+						font-size: em(13px)
+						color: $main_color
+				input
+					background-color: transparent
+					border: none
+					border-bottom: 1px solid #414141
 					outline: none
+					font-size: em(14px)
+					width: 274px
+					padding-bottom: 12px
+					color: #fff
+					
 
 
 
