@@ -1,5 +1,11 @@
 $(document).ready(function() {
 
+	 $("a[href='#get_in_touch']").magnificPopup({
+		mainClass: 'my-mfp-zoom-in',
+		removalDelay: 300,
+		type: 'inline',
+	});
+	 
 $(".down_head .scroll_down a").mPageScroll2id();
 
 function load()	{
@@ -113,8 +119,13 @@ $(".advice_wrap").owlCarousel({
 	});
 
 	$(".team_item_wrap").click(function() {
-		$(".team_item_wrap").removeClass("active");
-		$(this).addClass("active");
+		
+		if( $(this).hasClass("active") ) {
+			$(this).removeClass("active");
+		} else {
+			$(".team_item_wrap").removeClass("active");
+			$(this).addClass("active");
+		}
 	});
 
 	$(".team_item_wrap p").animated("fadeIn");
@@ -123,18 +134,19 @@ $(".advice_wrap").owlCarousel({
 
 
 	$(".contact-form label").click(function() {
-		$(".contact-form label").removeClass("active");
-		$(this).addClass("active");
-	
-			
-		
+
+		$(".contact-form label").each(function() {
+			if ( !$(this).find("input")[0].value ) {
+				$(this).removeClass("active");
+			}
 		});
 
+		$(this).addClass("active");
+	});
 
-   //	if (x.length==0){
-   	//	alert('eba');
-   	//	return false;
-   //	} 
+
+
+   
 
 
 

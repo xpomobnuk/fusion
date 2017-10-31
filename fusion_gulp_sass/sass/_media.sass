@@ -61,7 +61,7 @@
 	
 	
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px)
+@media only screen and (max-width : 767px)
 	.top_text
 		h1
 			font-size: em(30px)
@@ -87,21 +87,30 @@
 		.form_wrap
 			.contact-form
 				label
-					width: 46%
-					margin-left: 15px
+					width: 40%
+					&:nth-child(odd)
+						margin-left: 35px
+						margin-right: 38px
 					input
-						width: 88%
+						width: 100%
 					&.your_message
-						width: 90%
+						input
+							width: 100%
 
-	.new_york
-		margin-top: 40px
-	.other
-		margin-top: 40px
+	.foot_wrapp
+		text-align: center
+	.footer
+		.california
+			margin-top: 40px
+		.new_york
+			margin-top: 40px
+			margin-left: 0
+		.other
+			margin-top: 40px
 
-	.footer_logo_container
-		img
-			margin-left: 40px
+
+
+
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 504px)
@@ -145,21 +154,22 @@
 		.form_wrap
 			.contact-form
 				label
-					width: 100%
-					margin-left: 15px
+					width: 90%
+					&:nth-child(odd)
+						margin-left: 15px
+					&:nth-child(even)
+						float: left
+						margin-left: 15px
+					input
+						width: 100%
 					&.your_message
 						width: 90%
 	
 	.footer
-		font-size: em(11px)
-		.footer_logo_container
-			img
-				margin-left: 10px
-		.new_york
-			margin-left: 10px
+		font-size: em(14px)
 		.social_icons 
 			i
-				font-size: 18px
+				font-size: 28px
 				margin-right: 7px
 
 /* Custom, iPhone Retina */

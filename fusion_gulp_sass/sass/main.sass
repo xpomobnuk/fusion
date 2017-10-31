@@ -5,6 +5,7 @@
 @import "app/libs/font-awesome/css/font-awesome.sass"
 @import "app/libs/animate/animate.sass"
 @import "app/libs/owl-carousel/assets/owl.carousel.sass"
+@import "app/libs/Magnific-Popup/magnific-popup.sass"
 
 
 *::-webkit-input-placeholder
@@ -243,8 +244,13 @@ body textarea:required:valid
 			text-align: left
 			display:block!important
 
+
+
+
+
+
 .contact-us
-	padding-bottom: 120px
+	padding-bottom: 90px
 	.form_wrap
 		max-width: 750px
 		margin: 0 auto
@@ -254,14 +260,15 @@ body textarea:required:valid
 			padding-top: 50px
 			padding-bottom: 55px
 			width: 100%
-			label
+			label		
 				display: block
 				float: left
-				margin-left: 55px
 				margin-bottom: 55px
-				width: 41%
+				width: 38%
 				font-family: "OpenSansRegular", sans-serif
-
+				&:nth-child(odd)
+					margin-left: 55px
+					margin-right: 68px
 				span
 					+mt(.5s)
 					display: block
@@ -287,7 +294,7 @@ body textarea:required:valid
 					font-size: em(14px)
 					padding-bottom: 12px
 					color: #fff
-					width: 90%
+					width: 100%
 				&.your_message
 					margin-top: 30px
 					width: 86%
@@ -329,6 +336,110 @@ body textarea:required:valid
 			color: #bababa
 			font-size: 21px
 			margin-right: 9px
+			+mt(.5s)
+			&:hover
+				+mt(.5s)
+				color: $main_color
+
+.callback_form
+	label		
+		display: block
+		float: left
+		margin-bottom: 55px
+		width: 38%
+		font-family: "OpenSansRegular", sans-serif
+		span
+			+mt(.5s)
+			display: block
+			height: 24px
+			padding-top: 10px
+			font-size: em(14px)
+			color: #fff
+			text-transform: uppercase
+			&.active
+				input
+					+mt(.5s)
+					border-bottom: 1px solid $main_color
+				span
+					+mt(.5s)
+					padding-top: 0
+					font-size: em(13px)
+					color: $main_color
+			input
+				background-color: transparent
+				border: none
+				border-bottom: 1px solid #414141
+				outline: none
+				font-size: em(14px)
+				padding-bottom: 12px
+				color: #fff
+				width: 100%
+			&.your_message
+				margin-top: 30px
+				width: 86%
+				input
+						width: 99%
+
+
+
+.callback_form
+	background-color: #181818
+	width: 100%
+	label		
+		display: block
+		float: left
+		margin-bottom: 55px
+		margin-left: 15px
+		width: 90%
+		font-family: "OpenSansRegular", sans-serif
+		span
+			+mt(.5s)
+			display: block
+			height: 24px
+			padding-top: 10px
+			font-size: em(14px)
+			color: #fff
+			text-transform: uppercase
+		&.active
+			span
+				+mt(.5s)
+				padding-top: 0
+				font-size: em(14px)
+				color: $main_color
+			input
+				+mt(.5s)
+				border-bottom: 1px solid $main_color
+		input
+			background-color: transparent
+			border: none
+			border-bottom: 1px solid #414141
+			outline: none
+			font-size: em(14px)
+			padding-bottom: 12px
+			color: #fff
+			width: 100%
+			&.your_message
+				margin-top: 30px
+				width: 90%
+				input
+					width: 99%
+
+.text-center
+	text-align: center
+.form_button
+	text-transform: uppercase	
+	font-family: "OpenSansSemiBold", sans-serif
+	font-size: em(17px)
+	border: none
+	padding: 20px 35px
+	background-color: $main_color
+	+mt(.5s)
+	margin-top: 40px
+	&:hover
+		+mt(.5s)
+		background-color: darken($main_color, 10%)
+
+
 
 
 
